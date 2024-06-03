@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import DataBase from "../../../DataBase/DataBase.json";
 import Paginacion from './Paginacion';
 import InfoAnuncios from './InfoAnuncios';
@@ -6,24 +6,32 @@ import InfoAnuncios from './InfoAnuncios';
 function AnunciosContainer() {
   const anunciosPorPagina = 10;
   const [paginaActual, setPaginaActual] = useState(1);
+  const [anuncios, setAnuncios] = useState([]);
+  const [mostrarPaginacion, setMostrarPaginacion] = useState(true);
 
-  const indiceInicial = (paginaActual - 1) * anunciosPorPagina;
-  const indiceFinal = paginaActual * anunciosPorPagina;
+  useEffect(() => {
+    const cargarDatos = () => {
+      const indiceInicial = (paginaActual - 1) * anunciosPorPagina;
+      const indiceFinal = paginaActual * anunciosPorPagina;
+      const anunciosPaginaActual = DataBase.slice(indiceInicial, indiceFinal);
+      setAnuncios(anunciosPaginaActual);
+    };
 
-  const anunciosPaginaActual = DataBase.slice(indiceInicial, indiceFinal);
+    cargarDatos();
+  }, [paginaActual]);
 
   const irAPagina = (pagina) => {
-    if (pagina >= 1 && pagina <= numeroTotalPaginas) {
-      setPaginaActual(pagina);
-    }
+    setPaginaActual(pagina);
   };
 
   const numeroTotalPaginas = Math.ceil(DataBase.length / anunciosPorPagina);
 
   return (
     <>
-      <InfoAnuncios anuncios={anunciosPaginaActual} />
-      <Paginacion paginaActual={paginaActual} numeroTotalPaginas={numeroTotalPaginas} irAPagina={irAPagina} />
+      <InfoAnuncios anuncios={anuncios} togglePaginacion={setMostrarPaginacion} />
+      {mostrarPaginacion && (
+        <Paginacion paginaActual={paginaActual} numeroTotalPaginas={numeroTotalPaginas} irAPagina={irAPagina} />
+      )}
     </>
   );
 }

@@ -1,132 +1,172 @@
 [
     {
-     "id": 8459,
-     "title": "Piso de alquiler en Rúa Eugenio Carre Aldao, Os Mallos",
-     "price": 630,
-     "surface": 85,
-     "bedrooms": 3,
-     "restrooms": 2,
-     "features": "3 habs.,2 baños,85 m²,2ª Planta",
-     "description": "CURSO ESCOLAR. INTERNET INCLUIDO. Vivienda con personalidad, con estilo y muy luminosa. Se ha reformado hace dos años. Dispone de cocina equipada, salón, 3 habitaciones muy amplias(una de ellas italiana), dos baños con plato de ducha y zona de lavandería. Lavavajillas, horno, tendal, ventanas con doble acristalamiento. 2º sin ascensor. ",
-     "rent": 1,
-     "location_name": "A Coruña",
-     "is_province": 1
-    },
-    {
-     "id": 8460,
-     "title": "Piso de alquiler en Rúa Rodrigo a de Santiago, Agra del Orzán - Ventorrillo - Vioño",
-     "price": 450,
-     "surface": 70,
-     "bedrooms": 3,
-     "restrooms": 1,
-     "features": "3 habs.,1 baño,70 m²,4ª Planta",
-     "description": "Vivienda muy soleada de 3 habitaciones semiamueblada en la zona del Ventorrillo. 4º sin ascensor. Se ha instalado un suelo nuevo, se ha actualizado la cocina que está completamente equipada, videoportero, se han cambiado las piezas del baño, tendal cubierto. En la renta está incluido el consumo de agua.",
-     "rent": 1,
-     "location_name": "A Coruña",
-     "is_province": 1
-    },
-    {
-     "id": 8461,
-     "title": "Piso de alquiler en Avenida Novo Mesoiro, Mesoiro",
-     "price": 600,
-     "surface": 90,
-     "bedrooms": 3,
-     "restrooms": 2,
-     "features": "3 habs.,2 baños,90 m²,Ascensor,Calefacción",
-     "description": "Las tres habitaciones disponen de armario y cama. Dos baños (uno forma parte de una de las habitaciones) Cuenta con trastero y plaza de garaje. Para pedir más informacion o fotos contactar por whatsapp. tlf. 662 21 49 28",
-     "rent": 1,
-     "location_name": "A Coruña",
-     "is_province": 1
-    },
-    {
-     "id": 8463,
-     "title": "Piso de alquiler en Rúa Rianxo, Cuatro Caminos - Plaza de la Cubela",
-     "price": 650,
-     "surface": 80,
-     "bedrooms": 3,
-     "restrooms": 1,
-     "features": "3 habs.,1 baño,80 m²",
-     "rent": 1,
-     "location_name": "A Coruña",
-     "is_province": 1
-    },
-    {
-     "id": 8464,
-     "title": "Piso de alquiler en Rúa Rianxo, Cuatro Caminos - Plaza de la Cubela",
-     "price": 650,
-     "surface": 80,
-     "bedrooms": 3,
-     "restrooms": 1,
-     "features": "3 habs.,1 baño,80 m²,Ascensor,Calefacción",
-     "rent": 1,
-     "location_name": "A Coruña",
-     "is_province": 1
-    },
-    {
-     "id": 8465,
-     "title": "Apartamento de alquiler en Avenida de Montserrat, 20, Someso - Matogrande",
-     "price": 525,
-     "surface": 55,
-     "bedrooms": 1,
-     "restrooms": 1,
-     "features": "1 hab.,1 baño,55 m²,Ascensor,Parking",
-     "description": "Bonito apartamento amplio , exterior y soleado, totalmente amueblado , cocina equipada con electrodomesticos , incluido lavavajillas , despensa y patio interior cubierto, una habitación con armario empotrado , salón comedor amplio , baño con bañera , calefacción y agua por gas natural. Con garaje y trastero en el mismo edificio y acceso al ascensor , zona con jardin comunitario. Cercano a playas , hospitales , facultades y poligonos industriales, orientado sur. No se admiten mascotas Se requiere contrato mínimo de 1 año, fianza un mes y seguro de impago Agencias no.",
-     "rent": 1,
-     "location_name": "A Coruña",
-     "is_province": 1
-    },
-    {
-     "id": 8466,
-     "title": "Piso de alquiler en Rúa San Andrés, Centro - Juan Flórez - Plaza Pontevedra",
-     "price": 850,
-     "surface": 75,
-     "bedrooms": 2,
-     "restrooms": 2,
-     "features": "2 habs.,2 baños,75 m²,Ascensor,Calefacción",
-     "description": "Se alquila piso totalmente a estrenar incluido muebles y electrodomesticos en periodo escolar ( de septiembre a junio) en el corazon de la ciudad con todo tipo de servicios alrededor, paradas de bus urbano a cualquier punto de la ciudad tambien a universidades, hospitales, etc, autobus interurbano a 500m para destinos fuera de la ciudad, muy cerca de la plaza de Pontevedra, calle Real, Maria Pita, Obelisco, Palexco, museos, teatros, playas, paseo maritimo etc. la vivienda consta de 2 habitaciones amplias y soleadas, ventanales amplios, armarios empotrados, 2 baños completos, uno de ellos en suit con ducha de suelo y el otro con bañera, salon comedor muy acogedor con armario de almacenaje y cocina totalmente equipada a estrenar separada del salon con puertas de cristal, dispone de hilo musical en todas las estancias, tiene vistas despajadas a la ciudad y a patio abierto, los muebles tambien seran a estrenar estilo moderno acorde con el piso.",
-     "rent": 1,
-     "location_name": "A Coruña",
-     "is_province": 1
-    },
-    {
-     "id": 8467,
-     "title": "Piso de alquiler en Rúa Puerto Rico, Os Mallos",
-     "price": 600,
-     "surface": 85,
-     "bedrooms": 3,
-     "restrooms": 1,
-     "features": "3 habs.,1 baño,85 m²,Ascensor",
-     "description": "Se alquila piso a estudiantes. Situado en zona tranquila y ajardinada, muy luminoso, con una gran despensa y terraza semi-cubierta con tendedero, totalmente amueblado con vitroceramica y menaje. TODO ELÉCTRICO. COMUNIDAD Y AGUA INCLUIDOS EN EL PRECIO. A 5 min. de Estación de tren, de autobuses y con una excelente combinación de Transporte Publico. Cerca de Colegios e Institutos de Grados mediosuperiores y paradas de trasporte Universitario, . A pocos metros Centros de Salud, Polideportivos y Centros comerciales. Fácil y amplio acceso a aparcamiento público DISPONIBLE A 1 JULIO 2022. ABSTENERSE SERVICIOS INMOBILIARIOS.",
-     "rent": 1,
-     "location_name": "A Coruña",
-     "is_province": 1
-    },
-    {
-     "id": 8468,
-     "title": "Piso de alquiler en San Vicente, 42, Os Mallos",
-     "price": 630,
-     "surface": 84,
-     "bedrooms": 3,
-     "restrooms": 1,
-     "features": "3 habs.,1 baño,84 m²,3ª Planta",
-     "description": "A partir del 1 de julio, se alquila este funcional piso en una zona estratégica de la ciudad. Se trata de un tercer piso orientado al sur en un barrio encantador,  la Calle San Vicente nº42.  Es una vivienda amplia tranquila y muy cómoda, 73 metros cuadrados con 3 dormitorios, cocina, salón y un baño. Se ha reformado en enero de 2019, suelos nuevos, recién pintado, nueva vitrocerámica, y nueva loza sanitaria. A Es una vivienda amable, muy acogedora, luminosa y calentita, le da mucho el sol por su orientación sur, y tiene mucho potencial para una familia.  También es una gran oportunidad para estudiantes pues es una zona muy demandada para al encontrarse muy próximo a la estación de trenes y autobuses y disponer asimismo de buenas conexiones de transporte público hacia la universidad entre otros.  Nos gusta mucho este barrio lleno de vida, de gente, de pequeño comercio lleno de amabilidad, pararse en uno de sus bares a tomar un generoso pincho de tortilla y sentir que eres una cara conocida en el barrio, personalización y humanización en las relaciones es lo que hemos vivido paseándolo.  Sumamos su buena situación al encontrarse desembocando en de la Ronda de Outeiro, buenas conexiones con transportes públicos y con las vías principales de entrada y salida de la ciudad. Tiene todos los servicios, restaurantes, cafés, tiendas, bancos, guarderías, colegios...  ¡lo tiene todo! Nos gusta pero que mucho este piso tan funcional. Ven a conocerlo ¡te va a encantar![IW]",
-     "rent": 1,
-     "location_name": "A Coruña",
-     "is_province": 1
-    },
-    {
-     "id": 8469,
-     "title": "Piso de alquiler en Rúa Manuel Piñeiro Pose, Cuatro Caminos - Plaza de la Cubela",
-     "price": 650,
-     "surface": 72,
-     "bedrooms": 3,
-     "restrooms": 2,
-     "features": "3 habs.,2 baños,72 m²,Ascensor,Calefacción",
-     "description": "Piso en calle Manuel Piñeiro Pose (zona Corte Inglés) amueblado, 72m² útiles, 3 dormitorios, 2 baños (uno en dormitorio principal) cocina independiente, calefacción eléctrica, ventanas con acristalamiento Climalit, tendedero, ascensor. Plaza de garaje para coche y moto, trastero en bajo cubierta. No se aceptan mascotas. Urbenorte.",
-     "rent": 1,
-     "location_name": "A Coruña",
-     "is_province": 1
-    },
+        "id": 8459,
+        "title": "Piso de alquiler en Rúa Eugenio Carre Aldao, Os Mallos",
+        "price": 630,
+        "surface": 85,
+        "bedrooms": 3,
+        "restrooms": 2,
+        "features": "3 habs.,2 baños,85 m²,2ª Planta",
+        "description": "CURSO ESCOLAR. INTERNET INCLUIDO. Vivienda con personalidad, con estilo y muy luminosa. Se ha reformado hace dos años. Dispone de cocina equipada, salón, 3 habitaciones muy amplias(una de ellas italiana), dos baños con plato de ducha y zona de lavandería. Lavavajillas, horno, tendal, ventanas con doble acristalamiento. 2º sin ascensor. ",
+        "rent": 1,
+        "location_name": "A Coruña",
+        "is_province": 1,
+        "coordinates": {
+          "latitude": 43.362343,
+          "longitude": -8.410807
+        }
+       },
+       {
+        "id": 8460,
+        "title": "Piso de alquiler en Rúa Rodrigo a de Santiago, Agra del Orzán - Ventorrillo - Vioño",
+        "price": 450,
+        "surface": 70,
+        "bedrooms": 3,
+        "restrooms": 1,
+        "features": "3 habs.,1 baño,70 m²,4ª Planta",
+        "description": "Vivienda muy soleada de 3 habitaciones semiamueblada en la zona del Ventorrillo. 4º sin ascensor. Se ha instalado un suelo nuevo, se ha actualizado la cocina que está completamente equipada, videoportero, se han cambiado las piezas del baño, tendal cubierto. En la renta está incluido el consumo de agua.",
+        "rent": 1,
+        "location_name": "A Coruña",
+        "is_province": 1,
+        "coordinates": {
+          "latitude": 43.361425,
+          "longitude": -8.426507
+        }
+       },
+       {
+        "id": 8461,
+        "title": "Piso de alquiler en Avenida Novo Mesoiro, Mesoiro",
+        "price": 600,
+        "surface": 90,
+        "bedrooms": 3,
+        "restrooms": 2,
+        "features": "3 habs.,2 baños,90 m²,Ascensor,Calefacción",
+        "description": "Las tres habitaciones disponen de armario y cama. Dos baños (uno forma parte de una de las habitaciones) Cuenta con trastero y plaza de garaje. Para pedir más informacion o fotos contactar por whatsapp. tlf. 662 21 49 28",
+        "rent": 1,
+        "location_name": "A Coruña",
+        "is_province": 1,
+        "coordinates": {
+          "latitude": 43.333233,
+          "longitude": -8.424207
+        }
+       },
+       {
+        "id": 8463,
+        "title": "Piso de alquiler en Rúa Rianxo, Cuatro Caminos - Plaza de la Cubela",
+        "price": 650,
+        "surface": 80,
+        "bedrooms": 3,
+        "restrooms": 1,
+        "features": "3 habs.,1 baño,80 m²",
+        "rent": 1,
+        "location_name": "A Coruña",
+        "is_province": 1,
+        "coordinates": {
+          "latitude": 43.362984,
+          "longitude": -8.412632
+        }
+       },
+       {
+        "id": 8464,
+        "title": "Piso de alquiler en Rúa Rianxo, Cuatro Caminos - Plaza de la Cubela",
+        "price": 650,
+        "surface": 80,
+        "bedrooms": 3,
+        "restrooms": 1,
+        "features": "3 habs.,1 baño,80 m²,Ascensor,Calefacción",
+        "rent": 1,
+        "location_name": "A Coruña",
+        "is_province": 1,
+        "coordinates": {
+          "latitude": 43.362984,
+          "longitude": -8.412632
+        }
+       },
+       {
+        "id": 8465,
+        "title": "Apartamento de alquiler en Avenida de Montserrat, 20, Someso - Matogrande",
+        "price": 525,
+        "surface": 55,
+        "bedrooms": 1,
+        "restrooms": 1,
+        "features": "1 hab.,1 baño,55 m²,Ascensor,Parking",
+        "description": "Bonito apartamento amplio , exterior y soleado, totalmente amueblado , cocina equipada con electrodomesticos , incluido lavavajillas , despensa y patio interior cubierto, una habitación con armario empotrado , salón comedor amplio , baño con bañera , calefacción y agua por gas natural. Con garaje y trastero en el mismo edificio y acceso al ascensor , zona con jardin comunitario. Cercano a playas , hospitales , facultades y poligonos industriales, orientado sur. No se admiten mascotas Se requiere contrato mínimo de 1 año, fianza un mes y seguro de impago Agencias no.",
+        "rent": 1,
+        "location_name": "A Coruña",
+        "is_province": 1,
+        "coordinates": {
+          "latitude": 43.350701,
+          "longitude": -8.411505
+        }
+       },
+       {
+        "id": 8466,
+        "title": "Piso de alquiler en Rúa San Andrés, Centro - Juan Flórez - Plaza Pontevedra",
+        "price": 850,
+        "surface": 75,
+        "bedrooms": 2,
+        "restrooms": 2,
+        "features": "2 habs.,2 baños,75 m²,Ascensor,Calefacción",
+        "description": "Se alquila piso totalmente a estrenar incluido muebles y electrodomesticos en periodo escolar ( de septiembre a junio) en el corazon de la ciudad con todo tipo de servicios alrededor, paradas de bus urbano a cualquier punto de la ciudad tambien a universidades, hospitales, etc, autobus interurbano a 500m para destinos fuera de la ciudad, muy cerca de la plaza de Pontevedra, calle Real, Maria Pita, Obelisco, Palexco, museos, teatros, playas, paseo maritimo etc. la vivienda consta de 2 habitaciones amplias y soleadas, ventanales amplios, armarios empotrados, 2 baños completos, uno de ellos en suit con ducha de suelo y el otro con bañera, salon comedor muy acogedor con armario de almacenaje y cocina totalmente equipada a estrenar separada del salon con puertas de cristal, dispone de hilo musical en todas las estancias, tiene vistas despajadas a la ciudad y a patio abierto, los muebles tambien seran a estrenar estilo moderno acorde con el piso.",
+        "rent": 1,
+        "location_name": "A Coruña",
+        "is_province": 1,
+        "coordinates": {
+          "latitude": 43.368831,
+          "longitude": -8.400220
+        }
+       },
+       {
+        "id": 8467,
+        "title": "Piso de alquiler en Rúa Puerto Rico, Os Mallos",
+        "price": 600,
+        "surface": 85,
+        "bedrooms": 3,
+        "restrooms": 1,
+        "features": "3 habs.,1 baño,85 m²,Ascensor",
+        "description": "Se alquila piso a estudiantes. Situado en zona tranquila y ajardinada, muy luminoso, con una gran despensa y terraza semi-cubierta con tendedero, totalmente amueblado con vitroceramica y menaje. TODO ELÉCTRICO. COMUNIDAD Y AGUA INCLUIDOS EN EL PRECIO. A 5 min. de Estación de tren, de autobuses y con una excelente combinación de Transporte Publico. Cerca de Colegios e Institutos de Grados mediosuperiores y paradas de trasporte Universitario, . A pocos metros Centros de Salud, Polideportivos y Centros comerciales. Fácil y amplio acceso a aparcamiento público DISPONIBLE A 1 JULIO 2022. ABSTENERSE SERVICIOS INMOBILIARIOS.",
+        "rent": 1,
+        "location_name": "A Coruña",
+        "is_province": 1,
+        "coordinates": {
+          "latitude": 43.362234,
+          "longitude": -8.408732
+        }
+       },
+       {
+        "id": 8468,
+        "title": "Piso de alquiler en San Vicente, 42, Os Mallos",
+        "price": 630,
+        "surface": 84,
+        "bedrooms": 3,
+        "restrooms": 1,
+        "features": "3 habs.,1 baño,84 m²,3ª Planta",
+        "description": "A partir del 1 de julio, se alquila este funcional piso en una zona estratégica de la ciudad. Se trata de un tercer piso orientado al sur en un barrio encantador,  la Calle San Vicente nº42.  Es una vivienda amplia tranquila y muy cómoda, 73 metros cuadrados con 3 dormitorios, cocina, salón y un baño. Se ha reformado en enero de 2019, suelos nuevos, recién pintado, nueva vitrocerámica, y nueva loza sanitaria. A Es una vivienda amable, muy acogedora, luminosa y calentita, le da mucho el sol por su orientación sur, y tiene mucho potencial para una familia.  También es una gran oportunidad para estudiantes pues es una zona muy demandada para al encontrarse muy próximo a la estación de trenes y autobuses y disponer asimismo de buenas conexiones de transporte público hacia la universidad entre otros.  Nos gusta mucho este barrio lleno de vida, de gente, de pequeño comercio lleno de amabilidad, pararse en uno de sus bares a tomar un generoso pincho de tortilla y sentir que eres una cara conocida en el barrio, personalización y humanización en las relaciones es lo que hemos vivido paseándolo.  Sumamos su buena situación al encontrarse desembocando en de la Ronda de Outeiro, buenas conexiones con transportes públicos y con las vías principales de entrada y salida de la ciudad. Tiene todos los servicios, restaurantes, cafés, tiendas, bancos, guarderías, colegios...  ¡lo tiene todo! Nos gusta pero que mucho este piso tan funcional. Ven a conocerlo ¡te va a encantar![IW]",
+        "rent": 1,
+        "location_name": "A Coruña",
+        "is_province": 1,
+        "coordinates": {
+          "latitude": 43.362343,
+          "longitude": -8.407202
+        }
+       },
+       {
+        "id": 8469,
+        "title": "Piso de alquiler en Rúa Manuel Piñeiro Pose, Cuatro Caminos - Plaza de la Cubela",
+        "price": 650,
+        "surface": 72,
+        "bedrooms": 3,
+        "restrooms": 2,
+        "features": "3 habs.,2 baños,72 m²,Ascensor,Calefacción",
+        "description": "Piso en calle Manuel Piñeiro Pose (zona Corte Inglés) amueblado, 72m² útiles, 3 dormitorios, 2 baños (uno en dormitorio principal) cocina independiente, calefacción eléctrica, ventanas con acristalamiento Climalit, tendedero, ascensor. Plaza de garaje para coche y moto, trastero en bajo cubierta. No se aceptan mascotas. Urbenorte.",
+        "rent": 1,
+        "location_name": "A Coruña",
+        "is_province": 1,
+        "coordinates": {
+          "latitude": 43.362343,
+          "longitude": -8.415869
+        }
+       },
     {
      "id": 8470,
      "title": "Piso de alquiler en Avenida Fisterra, 24, Centro - Juan Flórez - Plaza Pontevedra",

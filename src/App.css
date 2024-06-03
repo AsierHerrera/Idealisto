@@ -40,3 +40,35 @@
 .read-the-docs {
   color: #888;
 }
+.anuncio {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease; /* Agregamos una transición suave */
+  background-color: #fff; /* Fondo blanco en modo claro */
+}
+
+/* Cambios para el modo oscuro */
+@media (prefers-color-scheme: dark) {
+  .anuncio {
+    border-color: #555; /* Cambiamos el color del borde */
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Cambiamos la sombra */
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Color de texto blanco */
+  }
+
+  .anuncio:hover {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Cambiamos la sombra al hacer hover */
+  }
+}
+
+.anuncio h3 {
+  margin-top: 0;
+}
+
+.anuncio p {
+  margin: 5px 0;
+}
+
