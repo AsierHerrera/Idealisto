@@ -1,0 +1,30 @@
+[
+	{
+		"User_id" : 1,
+		"Name" : "Mikel",
+		"Licence" : 1,
+		"email" : "mikel@example.com",
+		"password" : "Contraseña123!"
+	},
+	{
+		"User_id" : 2,
+		"Name" : "Asier",
+		"Licence" : 1,
+		"email" : "asier@example.com",
+		"password" : "Contraseña456!"
+	},
+	{
+		"User_id" : 3,
+		"Name" : "Natxo",
+		"Licence" : 1,
+		"email" : "natxo@example.com",
+		"password" : "Contraseña789!"
+	},
+	{
+		"User_id" : 4,
+		"Name" : "Jhonse",
+		"Licence" : 1,
+		"email" : "jhonse@example.com",
+		"password" : "Contraseña101112!"
+	}
+]
