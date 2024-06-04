@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import PaginaAlojamiento from "../PaginaAlojamiento/PaginaAlojamiento";
+import PaginaAlojamiento from "./PaginaAlojamiento";
 
 const InfoAnuncios = ({ anuncios, setMostrarPaginacion }) => {
   const [alojamientoSeleccionado, setAlojamientoSeleccionado] = useState(null);

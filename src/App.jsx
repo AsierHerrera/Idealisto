@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Login from './components/login/Login';
-import Navbar from './components/navbar/Navbar';
-import AnunciosContainer from './components/anuncios/AnunciosContainer';
-import FormularioAnfitriones from './components/FormularioAnfitriones/FormularioAnfitriones'
+import Login from './components/Login';
+import Navbar from './components/Navbar';
+import AnunciosContainer from './components/AnunciosContainer';
+import FormularioAnfitriones from './components/FormularioAnfitriones'
 import './App.css';
 
 function App() {
