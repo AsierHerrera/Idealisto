@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import usersData from '../../../DataBase/Users.json';
+import usersData from '../../DataBase/Users.json';
 function Login({ onLogin }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import DataBase from "../../../DataBase/DataBase.json";
+import DataBase from "../../DataBase/DataBase.json";
 import Paginacion from './Paginacion';
 import InfoAnuncios from './InfoAnuncios';
 
