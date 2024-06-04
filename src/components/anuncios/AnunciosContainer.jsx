@@ -28,7 +28,7 @@ function AnunciosContainer() {
 
   return (
     <>
-      <InfoAnuncios anuncios={anuncios} togglePaginacion={setMostrarPaginacion} />
+      <InfoAnuncios anuncios={anuncios} setMostrarPaginacion={setMostrarPaginacion} />
       {mostrarPaginacion && (
         <Paginacion paginaActual={paginaActual} numeroTotalPaginas={numeroTotalPaginas} irAPagina={irAPagina} />
       )}
