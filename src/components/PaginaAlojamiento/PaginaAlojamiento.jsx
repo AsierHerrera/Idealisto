@@ -10,8 +10,8 @@ const PaginaAlojamiento = ({ anuncio, onClose }) => {
     <div className="pagina-alojamiento">
       <article className="anuncio">
         <h3>{anuncio.title}</h3>
-        <p>Precio: {anuncio.price}</p>
-        <p>Superficie: {anuncio.surface}</p>
+        <p>Precio: {anuncio.price}€</p>
+        <p>Superficie: {anuncio.surface} m²</p>
         <p>Dormitorios: {anuncio.bedrooms}</p>
         <p>Cuartos de baño: {anuncio.restrooms}</p>
         <p>Resumen: {anuncio.features}</p>
