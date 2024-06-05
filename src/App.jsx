@@ -1,37 +1,23 @@
-import React, { useState } from 'react';
-import Login from './components/Login';
-import Navbar from './components/Navbar';
-import AnunciosContainer from './components/AnunciosContainer';
-import FormularioAnfitriones from './components/FormularioAnfitriones'
-import './App.css';
+import { useState, useEffect } from 'react'
+import router from './router.jsx'
+import { RouterProvider } from 'react-router-dom'
+import UserContext from './context/userContext'
+import './App.css'
 
 function App() {
-  const [currentView, setCurrentView] = useState('AnunciosContainer');
+  const [user, setUser] = useState(null);
 
-  const handleViewChange = (view) => {
-    setCurrentView(view);
-  };
-
+  useEffect(()=>{
+    console.log("user en App.jsx",user);
+  },[user]);
+ 
   return (
     <>
-      <Navbar onViewChange={handleViewChange} />
-      {/* <Login /> */}
-      <>
-            {currentView === 'AnunciosContainer' && (
-              <article className="map-outer">
-                <h2>Aqui podras buscar un piso</h2>
-                <AnunciosContainer  />
-              </article>
-            )}
-            {currentView === 'register' && (
-              <section>
-                <FormularioAnfitriones />
-              </section>
-            )}
-
-          </>
+      <UserContext.Provider value={{ user, setUser }}>
+        <RouterProvider router={router} />
+      </UserContext.Provider>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
