@@ -1,14 +1,20 @@
-import { useState, useEffect } from 'react';
+// components/Login.js
+import { useState, useEffect, useContext } from 'react';
 import usersData from '../../DataBase/Users.json';
-function Login({ onLogin }) {
+import UserContext from '../context/userContext';
+import { useNavigate } from "react-router-dom";
+
+function Login() {
+  const { setUser } = useContext(UserContext);
+  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [passwordRepeat, setPasswordRepeat] = useState('');
   const [emailError, setEmailError] = useState('');
   const [passwordError, setPasswordError] = useState('');
   const [passwordRepeatError, setPasswordRepeatError] = useState('');
-  const [isRegistering, setIsRegistering] = useState(false); 
-  
+  const [isRegistering, setIsRegistering] = useState(false);
+
   useEffect(() => {
     const validateEmail = () => {
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -56,62 +62,51 @@ function Login({ onLogin }) {
   const handleLogin = (event) => {
     event.preventDefault();
 
-    // Buscar el usuario por email
     const user = usersData.find(user => user.email === email);
 
-    // Verificar si el usuario existe y la contraseña coincide
     if (user && user.password === password) {
-      // Inicio de sesión exitoso
       alert('Inicio de sesión exitoso');
-      onLogin();  // Notificar al componente App sobre el inicio de sesión exitoso
+      setUser(user); // Actualiza el contexto de usuario
+      navigate("/")
     } else {
-      // Credenciales incorrectas
       alert('Credenciales incorrectas');
     }
   };
 
   const handleRegister = (event) => {
-    event.preventDefault(); // Evitar que la página se recargue al enviar el formulario
-  
-    // Verificar si las contraseñas coinciden
+    event.preventDefault();
+
     if (password === passwordRepeat) {
-      // Verificar si el email ya está registrado
       const isEmailRegistered = usersData.some(user => user.Email === email);
       if (isEmailRegistered) {
         alert('El correo electrónico ya está registrado');
       } else {
-        // Agregar el nuevo usuario a la lista
         const maxId = Math.max(...usersData.map(usuario => usuario.User_id));
         const newId = maxId + 1;
         const newUser = {
-            User_id: newId,
-            Is_admin: 0,
-            email,
-            password
+          User_id: newId,
+          Is_admin: 0,
+          email,
+          password
         };
         usersData.push(newUser);
         alert('Registro exitoso');
-        // Limpia los campos después del registro exitoso
         setEmail('');
         setPassword('');
         setPasswordRepeat('');
         setEmailError('');
         setPasswordError('');
         setPasswordRepeatError('');
-        // Cambia al modo de inicio de sesión después del registro exitoso
         setIsRegistering(false);
       }
     } else {
       alert('Las contraseñas no coinciden');
     }
   };
-  
-  const handleToggleMode = (event) => {
-    event.preventDefault(); // Previene el comportamiento predeterminado del botón
-    console.log("la userdata es:", usersData);
 
-    setIsRegistering(prevState => !prevState); // Cambiar el estado de registro
-    // Limpiar los campos y errores cuando se cambia entre modos de formulario
+  const handleToggleMode = (event) => {
+    event.preventDefault();
+    setIsRegistering(prevState => !prevState);
     setEmail('');
     setPassword('');
     setPasswordRepeat('');
