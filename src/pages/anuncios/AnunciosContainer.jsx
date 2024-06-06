@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Paginacion from '../../components/Paginacion';
 import InfoAnuncios from '../../components/InfoAnuncios';
@@ -8,6 +8,24 @@ function AnunciosContainer() {
   const [paginaActual, setPaginaActual] = useState(1);
   const data = useLoaderData();
   const [mostrarPaginacion, setMostrarPaginacion] = useState(true);
+  const [favoritos, setFavoritos] = useState(() => {
+    const favoritosGuardados = localStorage.getItem('favoritos');
+    return favoritosGuardados ? JSON.parse(favoritosGuardados) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem('favoritos', JSON.stringify(favoritos));
+  }, [favoritos]);
+
+  const toggleFavorito = (anuncioId) => {
+    setFavoritos(prevFavoritos => {
+      if (prevFavoritos.includes(anuncioId)) {
+        return prevFavoritos.filter(id => id !== anuncioId);
+      } else {
+        return [...prevFavoritos, anuncioId];
+      }
+    });
+  };
 
   // Cargar datos para la página actual
   const indiceInicial = (paginaActual - 1) * anunciosPorPagina;
@@ -22,7 +40,12 @@ function AnunciosContainer() {
 
   return (
     <>
-      <InfoAnuncios anuncios={anunciosPaginaActual} setMostrarPaginacion={setMostrarPaginacion} />
+      <InfoAnuncios
+        anuncios={anunciosPaginaActual}
+        setMostrarPaginacion={setMostrarPaginacion}
+        favoritos={favoritos}
+        toggleFavorito={toggleFavorito}
+      />
       {mostrarPaginacion && (
         <Paginacion paginaActual={paginaActual} numeroTotalPaginas={numeroTotalPaginas} irAPagina={irAPagina} />
       )}

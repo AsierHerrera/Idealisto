@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import PaginaAlojamiento from "../pages/anuncios/PaginaAlojamiento";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 
-
-const InfoAnuncios = ({ anuncios, setMostrarPaginacion }) => {
+const InfoAnuncios = ({ anuncios, setMostrarPaginacion, favoritos, toggleFavorito }) => {
   const [alojamientoSeleccionado, setAlojamientoSeleccionado] = useState(null);
   const navigate = useNavigate();
-
 
   const cerrarPaginaAlojamiento = () => {
     setAlojamientoSeleccionado(null);
@@ -35,9 +33,11 @@ const InfoAnuncios = ({ anuncios, setMostrarPaginacion }) => {
             <p>Dormitorios: {anuncio.bedrooms}</p>
             <p>Descripcion: {truncarDescripcion(anuncio.description, 100)}</p>
             <Link to={`/anuncios/${anuncio.id}`}> 
-            <button >Más información</button>
-            </Link> 
-          
+              <button>Más información</button>
+            </Link>
+            <button onClick={() => toggleFavorito(anuncio.id)}>
+              {favoritos.includes(anuncio.id) ? 'Eliminar de Favoritos' : 'Agregar a Favoritos'}
+            </button>
           </article>
         ))
       ) : (
