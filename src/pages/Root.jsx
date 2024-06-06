@@ -7,11 +7,19 @@ const Root = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        if (!user) {
+
+        const handleBeforeUnload = () => {
+            localStorage.clear();
+          };
+      
+          window.addEventListener('beforeunload', handleBeforeUnload);
+          
+        const userId = localStorage.getItem('userId');
+        if (!userId) {
           navigate('/login');
         }
       }, []);
-
+    
     return (
         <div>
             <nav>
