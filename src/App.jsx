@@ -4,11 +4,11 @@ import { RouterProvider } from 'react-router-dom'
 import UserContext from './context/userContext'
 import './App.css'
 
+
 function App() {
   const [user, setUser] = useState(null);
 
   useEffect(()=>{
-    console.log("user en App.jsx",user);
   },[user]);
  
   return (

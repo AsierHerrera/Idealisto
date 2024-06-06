@@ -2,11 +2,11 @@ import {createBrowserRouter,redirect} from "react-router-dom";
 import Root from "./pages/Root";
 import ErrorPage from "./pages/ErrorPage";
 import Login from "./pages/Login";
-import DataBase from "../DataBase/DataBase.json"
 import AnunciosContainer from "./pages/anuncios/AnunciosContainer";
-import InfoAnuncios from "./pages/anuncios/InfoAnuncios";
+import InfoAnuncios from "./components/InfoAnuncios.jsx";
 import FormularioAnfitriones from "./pages/FormularioAnfitriones"
 import { loadAnuncios, loadAnuncioById } from './utils/loaders.js';
+import PaginaAlojamiento from "./pages/anuncios/PaginaAlojamiento.jsx";
 
 
 
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
         },
         {
             path: "/anuncios/:id",
-            element: <InfoAnuncios />,
+            element: <PaginaAlojamiento />,
             loader: loadAnuncioById
         },
         {

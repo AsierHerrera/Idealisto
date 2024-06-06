@@ -5,7 +5,6 @@ import UserContext from "../context/userContext";
 const Root = () => {
     const {user,setUser} = useContext(UserContext);
     const navigate = useNavigate();
-    console.log("user en Root.jsx", user)
 
     useEffect(() => {
         if (!user) {
