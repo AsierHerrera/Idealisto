@@ -15,3 +15,20 @@ export const loadAnuncioById = async ({ params }) => {
   }
   return anuncio;
 };
+
+export const loadFavoritos = async () => {
+  const favoritos = localStorage.getItem('favoritos');
+  
+  if (!favoritos) {
+    return [];
+  }
+
+  const favoritosIds = JSON.parse(favoritos);
+
+  const favoritosAnuncios = DataBase.filter(anuncio => favoritosIds.includes(anuncio.id));
+
+
+  return favoritosAnuncios;
+};
+
+
