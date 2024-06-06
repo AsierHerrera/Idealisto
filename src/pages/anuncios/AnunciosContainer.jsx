@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Paginacion from '../../components/Paginacion';
-import InfoAnuncios from './InfoAnuncios';
+import InfoAnuncios from '../../components/InfoAnuncios';
 
 function AnunciosContainer() {
   const anunciosPorPagina = 10;

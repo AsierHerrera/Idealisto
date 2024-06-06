@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import PaginaAlojamiento from "../../components/PaginaAlojamiento";
+import PaginaAlojamiento from "../pages/anuncios/PaginaAlojamiento";
+import {Link} from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
+
 
 const InfoAnuncios = ({ anuncios, setMostrarPaginacion }) => {
   const [alojamientoSeleccionado, setAlojamientoSeleccionado] = useState(null);
+  const navigate = useNavigate();
 
-  const abrirPaginaAlojamiento = (anuncio) => {
-    console.log("Anuncio seleccionado:", anuncio);
-    setAlojamientoSeleccionado(anuncio);
-    setMostrarPaginacion(false); // Ocultar paginación
-  };
 
   const cerrarPaginaAlojamiento = () => {
     setAlojamientoSeleccionado(null);
@@ -16,7 +15,6 @@ const InfoAnuncios = ({ anuncios, setMostrarPaginacion }) => {
   };
 
   useEffect(() => {
-    console.log("Estado después de setAlojamientoSeleccionado:", alojamientoSeleccionado);
   }, [alojamientoSeleccionado]);
 
   const truncarDescripcion = (descripcion, limite) => {
@@ -36,11 +34,14 @@ const InfoAnuncios = ({ anuncios, setMostrarPaginacion }) => {
             <p>Superficie: {anuncio.surface} m²</p>
             <p>Dormitorios: {anuncio.bedrooms}</p>
             <p>Descripcion: {truncarDescripcion(anuncio.description, 100)}</p>
-            <button onClick={() => abrirPaginaAlojamiento(anuncio)}>Más información</button>
+            <Link to={`/anuncios/${anuncio.id}`}> 
+            <button >Más información</button>
+            </Link> 
+          
           </article>
         ))
       ) : (
-        <PaginaAlojamiento anuncio={alojamientoSeleccionado} onClose={cerrarPaginaAlojamiento} />
+        <PaginaAlojamiento onClose={cerrarPaginaAlojamiento} />
       )}
     </>
   );
