@@ -4,10 +4,12 @@ import ErrorPage from "./pages/ErrorPage";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import AnunciosContainer from "./pages/anuncios/AnunciosContainer";
-import InfoAnuncios from "./components/InfoAnuncios.jsx";
+import TarjetasAnuncios from "./components/InfoAnuncios.jsx";
 import FormularioAnfitriones from "./pages/FormularioAnfitriones";
-import { loadAnuncios, loadAnuncioById, loadFavoritos } from './utils/loaders.js';
+import { loadAnuncios, loadAnuncioById, loadFavoritos, loadAnuncioByuserId } from './utils/loaders.js';
 import PaginaAlojamiento from "./pages/anuncios/PaginaAlojamiento.jsx";
+import AnunciosUsuario from "./pages/anuncios/AnunciosUsuario.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -29,6 +31,12 @@ const router = createBrowserRouter([
         path: "/anuncios/:id",
         element: <PaginaAlojamiento />,
         loader: loadAnuncioById,
+      },
+      {
+        path: "/anuncios/publicaciones/:userId",
+        element: <AnunciosUsuario />,
+        loader: loadAnuncioByuserId,
+
       },
       {
         path: "/registro",

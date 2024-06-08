@@ -16,6 +16,16 @@ export const loadAnuncioById = async ({ params }) => {
   return anuncio;
 };
 
+export const loadAnuncioByuserId = async ({ params }) => {
+  console.log("User id de params", params.userId)
+  const anuncios = DataBase.filter(anuncio => anuncio.User_id === parseInt(params.userId));
+  console.log("Los anuncios son EN LOADER:", anuncios);
+  if (anuncios.length === 0) {
+    return [];
+  }
+  return anuncios;
+};
+
 export const loadFavoritos = async () => {
   const favoritos = localStorage.getItem('favoritos');
   

@@ -114,15 +114,21 @@ const Form = () => {
       const newId = maxId + 1;
       const newPiso = {
         id: newId,
-        ...formData,
-        latitud: parseFloat(formData.latitud),
-        longitud: parseFloat(formData.longitud),
+        title: formData.title,
         price: parseFloat(formData.price),
         surface: parseFloat(formData.surface),
         bedrooms: parseInt(formData.bedrooms, 10),
         restrooms: parseInt(formData.restrooms, 10),
+        features: formData.features,
+        description: formData.description,
         rent: 1,
-        is_province: 1
+        location_name: formData.location_name,
+        is_province: 1,
+        coordinates: {
+          latitude: parseFloat(formData.latitud),
+          longitude: parseFloat(formData.longitud)
+        },
+        User_id: parseInt(localStorage.getItem("userId"))
       };
       DataBase.push(newPiso);
       alert('Formulario enviado correctamente');
