@@ -28,10 +28,13 @@ const Root = () => {
                         <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <Link to="/anuncios">Anuncios</Link>
+                        <Link to="/anuncios">Buscar pisos</Link>
                     </li>
                     <li>
                         <Link to="/registro">Registra tu piso </Link>
+                    </li>
+                    <li>
+                    <Link to={`/anuncios/publicaciones/${user?.User_id}`}>Consulta tus publicaciones</Link>
                     </li>
                 </ul>
             </nav>
