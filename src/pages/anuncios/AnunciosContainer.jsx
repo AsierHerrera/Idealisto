@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Paginacion from '../../components/Paginacion';
 import InfoAnuncios from '../../components/InfoAnuncios';
+import styles from "../Home/Home.module.css"
 
 function AnunciosContainer() {
   const anunciosPorPagina = 10;
@@ -40,6 +41,7 @@ function AnunciosContainer() {
 
   return (
     <>
+      <h1 className={styles.titulo} >Encuentra tu piso ideal</h1>
       <InfoAnuncios
         anuncios={anunciosPaginaActual}
         setMostrarPaginacion={setMostrarPaginacion}
