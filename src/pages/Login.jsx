@@ -1,8 +1,8 @@
-// components/Login.js
 import { useState, useEffect, useContext } from 'react';
 import usersData from '../../DataBase/Users.json';
 import UserContext from '../context/userContext';
 import { useNavigate } from "react-router-dom";
+import styles from "./form/Form.module.css";
 
 function Login() {
   const { setUser } = useContext(UserContext);
@@ -92,7 +92,8 @@ function Login() {
     }
   };
 
-  const handleToggleMode = () => {
+  const handleToggleMode = (event) => {
+    event.preventDefault();
     setIsRegistering(prevState => !prevState);
     setFormState({
       email: '',
@@ -107,12 +108,13 @@ function Login() {
   const { email, password, passwordRepeat, emailError, passwordError, passwordRepeatError } = formState;
 
   return (
-    <section>
+    <section className={styles.form_main}>
       {isRegistering ? (
         <form onSubmit={handleRegister}>
-          <div>
+          <div className={styles.inputContainer}>
             <label htmlFor="email">Email:</label>
             <input
+              className={styles.inputField}
               type="text"
               id="email"
               name="email"
@@ -121,9 +123,10 @@ function Login() {
             />
             {emailError && <p style={{ color: 'red' }}>{emailError}</p>}
           </div>
-          <div>
+          <div className={styles.inputContainer}>
             <label htmlFor="password">Password:</label>
             <input
+              className={styles.inputField}
               type="password"
               id="password"
               name="password"
@@ -132,9 +135,10 @@ function Login() {
             />
             {passwordError && <p style={{ color: 'red' }}>{passwordError}</p>}
           </div>
-          <div>
+          <div className={styles.inputContainer}>
             <label htmlFor="passwordRepeat">Password Repeat:</label>
             <input
+              className={styles.inputField}
               type="password"
               id="passwordRepeat"
               name="passwordRepeat"
@@ -143,14 +147,15 @@ function Login() {
             />
             {passwordRepeatError && <p style={{ color: 'red' }}>{passwordRepeatError}</p>}
           </div>
-          <button type="submit">Registrarse</button>
+          <button id="button" type="submit">Registrarse</button>
           <button type="button" onClick={handleToggleMode}>¿Ya tienes una cuenta? Inicia sesión aquí</button>
         </form>
       ) : (
         <form onSubmit={handleLogin}>
-          <div>
+          <div className={styles.inputContainer}>
             <label htmlFor="email">Email:</label>
             <input
+              className={styles.inputField}
               type="text"
               id="email"
               name="email"
@@ -159,18 +164,19 @@ function Login() {
             />
             {emailError && <p style={{ color: 'red' }}>{emailError}</p>}
           </div>
-          <div>
+          <div className={styles.inputContainer}>
             <label htmlFor="password">Password:</label>
             <input
+              className={styles.inputField}
               type="password"
               id="password"
               name="password"
               value={password}
               onChange={handleChange}
             />
-            {passwordError && <p style={{ color: 'red' }}>  {passwordError}</p>}
+            {passwordError && <p style={{ color: 'red' }}>{passwordError}</p>}
           </div>
-          <button className="iniciar-sesion" type="submit">Iniciar sesión</button>
+          <button id="button" className="iniciar-sesion" type="submit">Iniciar sesión</button>
           <button type="button" onClick={handleToggleMode}>¿No tienes una cuenta? Regístrate aquí</button>
         </form>
       )}

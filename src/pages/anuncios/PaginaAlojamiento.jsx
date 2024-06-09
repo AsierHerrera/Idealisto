@@ -2,6 +2,8 @@ import React from 'react';
 import Mapa from '../../components/Mapa'; // Asegúrate de ajustar la ruta si es necesario
 import {Link, useLoaderData } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import styles from "../Home/Home.module.css"
+
 
 const PaginaAlojamiento = () => {
   const data = useLoaderData();
@@ -18,8 +20,8 @@ const PaginaAlojamiento = () => {
 
   return (
     <div className="pagina-alojamiento">
-      <article className="anuncio">
-        <h3>{data.title}</h3>
+      <article className={styles.anuncio}>
+        <h3 className={styles.titulo}>{data.title}</h3>
         <p>Precio: {data.price}€</p>
         <p>Superficie: {data.surface} m²</p>
         <p>Dormitorios: {data.bedrooms}</p>
@@ -27,7 +29,11 @@ const PaginaAlojamiento = () => {
         <p>Resumen: {data.features}</p>
         <p>Descripcion: {data.description}</p>
         <p>Provincia: {data.location_name}</p>
-        <div>Miralo en el mapa: <Mapa latitud={data.coordinates.latitude} longitud={data.coordinates.longitude} /></div>
+        <div>Miralo en el mapa: </div>
+        <div className={styles.mapa} >
+        <Mapa latitud={data.coordinates.latitude} longitud={data.coordinates.longitude} />
+
+        </div>
 
       </article>
       <button onClick={cerrarPagina} >Volver</button>

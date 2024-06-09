@@ -1,11 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
-import Root from "./pages/Root";
+import Root from "./pages/Root/Root.jsx";
 import ErrorPage from "./pages/ErrorPage";
 import Login from "./pages/Login";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 import AnunciosContainer from "./pages/anuncios/AnunciosContainer";
 import TarjetasAnuncios from "./components/InfoAnuncios.jsx";
-import FormularioAnfitriones from "./pages/FormularioAnfitriones";
+import FormularioAnfitriones from "./pages/form/FormularioAnfitriones.jsx";
 import { loadAnuncios, loadAnuncioById, loadFavoritos, loadAnuncioByuserId } from './utils/loaders.js';
 import PaginaAlojamiento from "./pages/anuncios/PaginaAlojamiento.jsx";
 import AnunciosUsuario from "./pages/anuncios/AnunciosUsuario.jsx";

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import DataBase from "../../DataBase/DataBase.json";
+import DataBase from "../../../DataBase/DataBase.json";
+import styles from "./Form.module.css";
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -154,25 +155,29 @@ const Form = () => {
   };
 
   return (
-    <div>
-      <h2>Registra aquí tu casa</h2>
+    <div className={styles.form_main}>
+      <h2 className={styles.titulo}>Registra aquí tu casa</h2>
       <form onSubmit={handleSubmit}>
         {Object.keys(formData).map(field => (
-          <div key={field}>
-            <label htmlFor={field}>{field.charAt(0).toUpperCase() + field.slice(1).replace('_', ' ')}:</label>
+          <div key={field} className={styles.inputContainer}>
+            <label htmlFor={field} className={styles.heading}>
+              {field.charAt(0).toUpperCase() + field.slice(1).replace('_', ' ')}:
+            </label>
             <input
+              className={styles.inputField}
               type={field === 'description' ? 'textarea' : 'text'}
               id={field}
               name={field}
               value={formData[field]}
               onChange={handleChange}
+              placeholder={field.charAt(0).toUpperCase() + field.slice(1)}
             />
             {errors[field] && <p style={{ color: 'red' }}>{errors[field]}</p>}
           </div>
         ))}
         {errors.form && <p style={{ color: 'red' }}>{errors.form}</p>}
         {success && <p style={{ color: 'green' }}>¡Formulario enviado con éxito!</p>}
-        <button type="submit">Publicar</button>
+        <button id="button" type="submit">Publicar</button>
       </form>
     </div>
   );
