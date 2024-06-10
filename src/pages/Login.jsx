@@ -108,6 +108,8 @@ function Login() {
   const { email, password, passwordRepeat, emailError, passwordError, passwordRepeatError } = formState;
 
   return (
+    <div>
+      <h1 className={styles.titulo}>Welcome to idealisto</h1>
     <section className={styles.form_main}>
       {isRegistering ? (
         <form onSubmit={handleRegister}>
@@ -181,7 +183,10 @@ function Login() {
         </form>
       )}
     </section>
-  );
+
+    
+    </div>
+      );
 }
 
 export default Login;
